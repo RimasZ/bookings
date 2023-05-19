@@ -36,8 +36,10 @@ class FrontController extends Controller
 
     public function showHotel(Hotel $hotel)
     {
+        $countries = Country::all();
         return view('front.hotel', [
             'hotel' => $hotel,
+            'countries' => $countries
         ]);
     }
 
