@@ -1,0 +1,85 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+.card-header{
+    h1{
+        font-size: 30px;
+    }
+}
+
+.story {
+        margin-top: 10px;
+        h2{
+            margin-bottom: 20px;
+        }
+    }  
+
+
+.buttons{
+    margin-top: 10px;
+    .btn{
+        width: 200px;
+        margin: 5px;
+    }
+}
+.form-control{
+    margin-bottom: 10px;
+}
+
+.donors{
+    margin-top: 10px;
+}
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    // display: none;
+}
+
+.completed{
+    background-color: rgb(235, 235, 235);
+}
+
+.story-info{
+    // margin-left: 50px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+span.rem {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid crimson;
+    background-color: crimson;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+          
+        
