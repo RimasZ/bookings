@@ -6,10 +6,10 @@
         <div class="col-12">
             <div class="card mt-5">
                 <div class="card-header">
-                    <h1>Add Hotel</h1>
+                    <h1>Edit Hotel</h1>
                 </div>
                 <div class="card-body">
-                    <form action="{{route('hotels-store')}}" method="post">
+                    <form action="{{route('hotels-update', $hotel)}}" method="post" enctype="multipart/form-data">
 
                         <div class="container">
                             <div class="row">
@@ -38,7 +38,7 @@
                                 </div>
                                 <div class="col-4">
                                     <label class="form-label">Hotel country</label>
-                                    <select class="form-select --country--select" name="country_id" data-url="{{route('products-colors')}}" data-url-name="{{route('products-color-name')}}">
+                                    <select class="form-select --country--select" name="country_id">
                                         <option value="0">Countries list</option>
                                         @foreach($countries as $country)
                                         <option value="{{$country->id}}">{{$country->title}} ({{$country->season}})</option>

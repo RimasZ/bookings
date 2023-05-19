@@ -12,12 +12,12 @@
                     <ul class="list-group">
                         @forelse($countries as $country)
                         <li class="list-group-item">
-                            <div class="cat-line">
-                                <div class="cat-info">
+                            <div class="cat-line row">
+                                <div class="cat-info col-8">
                                     <h2>{{$country->title}}</h2>
                                     <h3>{{$country->season}}</h3>
                                 </div>
-                                <div class="buttons">
+                                <div class="buttons col-4">
                                     <a href="{{route('countries-edit', $country)}}" class="btn btn-outline-success">Edit</a>
                                     <form action="{{route('countries-delete', $country)}}" method="post">
                                         <button type="submit" class="btn btn-outline-danger">delete</button>
